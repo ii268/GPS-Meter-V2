@@ -1,4 +1,4 @@
-header{
+header {
     background: #d6e4f0;
     padding: 10px;
     position: fixed;
@@ -11,21 +11,35 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+
 tr {
     border-bottom: solid 1px #222;
 }
-td,th{
+
+td,
+th {
     margin: 0 20px;
 }
-th{
+
+th {
     width: 30%;
 }
-body{
+
+body {
     margin: 0;
+    font-family: sans-serif;
 }
+
 main {
     color: #333;
     margin-top: 70px;
+}
+
+#seting_btn{
+    display: none;
+    margin-right: 5px;
+    position: fixed;
+    right: 0;
 }
 
 .main-info {
@@ -70,13 +84,33 @@ main {
     width: 80%;
 }
 
-#on_off_btn{
+#on_off_btn {
     background: #a01e1e;
     border: none;
     border-radius: 10px;
     height: 30px;
     width: 80px;
 }
-@media screen and (min-width:768px){
 
+.btntobtn{
+    background: #1e56a0;
+    border: solid 1px #000;
+    border-radius: 10px;
+    padding: 10px 30px;
 }
+
+dialog{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+dialog::backdrop{
+    background: rgba(34, 34, 34, 0.8);
+}
+
+#err_dia{
+    background: #f33;
+}
+
+@media screen and (min-width:768px) {}

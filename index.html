@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="jjd">
+<html lang="ja">
 
 <head>
     <meta charset="UTF-8">
@@ -12,19 +12,20 @@
     <main>
         <header>
             <button id="on_off_btn">OFF</button>
-            <button style="position: fixed; right: 0;">s</button>
+            <button id="seting_btn">seting</button>
         </header>
 
-        <dialog id="on_dia"></dialog>
+        <dialog id="err_dia">
+            <p>エラーが発生したので情報の取得ができませんでした。</p>
+            <p>エラーコード: <span id="errcode"></span></p>
+            <button id="errclose" class="btntobtn">閉じる</button>
+        </dialog>
 
         <div class="main-info">
             <div class="mater">
                 <p class="speed"><span id="speed_h">x</span> km/h</p>
                 <p><span id="speed_m">x</span> m/s</p>
             </div>
-        </div>
-        <div class="states">
-            
         </div>
         <div class="sub-info">
             <p>サブ情報</p>
@@ -50,6 +51,7 @@
                     <td id="longitude"></td>
                 </tr>
             </table>
+            <a href="" target="_blank" rel="noopener noreferrer" id="mapurl">google mapで場所を開く</a>
         </div>
     </main>
     <script src="./script.js"></script>
