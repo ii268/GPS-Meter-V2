@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jjd">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GPS</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <button id="on_off_btn">OFF</button>
+            <button style="position: fixed; right: 0;">s</button>
+        </header>
+
+        <dialog id="on_dia"></dialog>
+
+        <div class="main-info">
+            <div class="mater">
+                <p class="speed"><span id="speed_h">x</span> km/h</p>
+                <p><span id="speed_m">x</span> m/s</p>
+            </div>
+        </div>
+        <div class="states">
+            
+        </div>
+        <div class="sub-info">
+            <p>サブ情報</p>
+            <table>
+                <tr>
+                    <th>高度(m)</th>
+                    <td id="altitude">0</td>
+                </tr>
+                <tr>
+                    <th>緯度経度の誤差(m)</th>
+                    <td id="accuracy"></td>
+                </tr>
+                <tr>
+                    <th>方角</th>
+                    <td id="heading"></td>
+                </tr>
+                <tr>
+                    <th>緯度</th>
+                    <td id="latitude"></td>
+                </tr>
+                <tr>
+                    <th>経度</th>
+                    <td id="longitude"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
