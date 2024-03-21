@@ -35,11 +35,8 @@ main {
     margin-top: 70px;
 }
 
-#seting_btn{
-    display: none;
-    margin-right: 5px;
-    position: fixed;
-    right: 0;
+#memubtn{
+   margin: 0 20px;
 }
 
 .main-info {
@@ -85,9 +82,11 @@ main {
 }
 
 #on_off_btn {
-    background: #a01e1e;
+    float: right;
+    margin: 0 20px;
     border: none;
     border-radius: 10px;
+    background: #a01e1e;
     height: 30px;
     width: 80px;
 }
@@ -99,8 +98,39 @@ main {
     padding: 10px 30px;
 }
 
-dialog{
+.dialogclose{
+    background: none;
     border: none;
+    padding: 0;
+    float: right;
+}
+
+
+.dialogclose img{
+    width: 30px;
+}
+
+.main-memu{
+    display: inline-block;
+}
+
+.main-memu button{
+    border: none;
+    background: none;
+}
+
+.main-memu img{
+    color: #333;
+    border: none;
+    background: none;
+    height: 30px;
+}
+
+dialog{
+    width: 80%;
+    background: #d6e4f0;
+    border: none;
+    padding-top: 10px;
     border-radius: 8px;
     padding: 10px;
 }
@@ -113,4 +143,8 @@ dialog::backdrop{
     background: #f33;
 }
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+    dialog{
+        width: 60%;
+    }
+}

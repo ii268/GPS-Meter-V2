@@ -2,6 +2,7 @@ const maininfo = document.querySelector('.main-info');
 var id,power = false;
 
 on_off_btn.addEventListener("click",onoff);
+
 function onoff(){
     if (power) {
         navigator.geolocation.clearWatch(id);
@@ -19,8 +20,8 @@ function onoff(){
 }
 function gps(p) {
     const co = p.coords;
-    speed_h.innerText = Math.round(co.speed * 3.6);
-    speed_m.innerText = Math.round(co.speed);
+    speed_h.innerText = Math.round(co.speed * 3.6) + eval(speedgoh.value);
+    speed_m.innerText = Math.round(co.speed) + eval(speedgos.value);
 
     latitude.innerHTML = co.latitude;
     longitude.innerHTML = co.longitude;
@@ -40,4 +41,11 @@ errclose.addEventListener("click",()=>{
 err_dia.addEventListener("close",()=>{
     onoff();
     maininfo.style.borderColor = '#a11';
+});
+
+seting_btn.addEventListener("click",()=>{
+    setting_dia.showModal();
+});
+settingclose.addEventListener("click",()=>{
+    setting_dia.close();
 });

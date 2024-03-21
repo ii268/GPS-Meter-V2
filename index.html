@@ -11,14 +11,26 @@
 <body>
     <main>
         <header>
+            <div class="main-memu">
+                <a href="https://github.com/ibui2628/GPS-Meter-V2" target="_blank" rel="noopener"><img
+                        src="./icons/info-circle.svg" alt="about"></a>
+                <button id="seting_btn"><img src="./icons/gear.svg" alt="setting"></button>
+            </div>
             <button id="on_off_btn">OFF</button>
-            <button id="seting_btn">seting</button>
         </header>
 
+        <dialog id="setting_dia">
+            <button id="settingclose" class="dialogclose"><img src="./icons/x.svg" alt=""></button>
+            <p>設定</p>
+            <p>誤差修正</p>
+            <label>速度 (km/h):<br><input type="number" id="speedgoh" value="0"></label><br>
+            <label>速度 (m/s):<br><input type="number" id="speedgos" value="0"></label><br>
+        </dialog>
+
         <dialog id="err_dia">
+            <button id="errclose" class="dialogclose"><img src="./icons/x.svg" alt=""></button>
             <p>エラーが発生したので情報の取得ができませんでした。</p>
             <p>エラーコード: <span id="errcode"></span></p>
-            <button id="errclose" class="btntobtn">閉じる</button>
         </dialog>
 
         <div class="main-info">
