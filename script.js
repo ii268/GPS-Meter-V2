@@ -1,9 +1,22 @@
+const key_name = 'GPS-MATER-V1';
+var seting_data;
+if (!localStorage.hasOwnProperty(key_name)) {
+    console.info('create key');
+    seting_data = '{ "darkmode": false, "speedgoh": 0, "speedgos": 0}';
+    localStorage.setItem(key_name, seting_data);
+    seting_data = JSON.parse(seting_data);
+} else {
+    seting_data = JSON.parse(localStorage.getItem(key_name));
+    speedgoh.value = seting_data["speedgoh"];
+    speedgos.value = seting_data["speedgos"];
+}
+
 const maininfo = document.querySelector('.main-info');
-var id,power = false;
+var id, power = false;
 
-on_off_btn.addEventListener("click",onoff);
+on_off_btn.addEventListener("click", onoff);
 
-function onoff(){
+function onoff() {
     if (power) {
         navigator.geolocation.clearWatch(id);
         on_off_btn.style = '';
@@ -35,17 +48,24 @@ function err(p) {
     err_dia.showModal();
     errcode.innerText = p.code;
 }
-errclose.addEventListener("click",()=>{
+errclose.addEventListener("click", () => {
     err_dia.close();
 });
-err_dia.addEventListener("close",()=>{
+err_dia.addEventListener("close", () => {
     onoff();
     maininfo.style.borderColor = '#a11';
 });
 
-seting_btn.addEventListener("click",()=>{
+seting_btn.addEventListener("click", () => {
     setting_dia.showModal();
 });
-settingclose.addEventListener("click",()=>{
+settingclose.addEventListener("click", () => {
     setting_dia.close();
+});
+setting_dia.addEventListener("close", () => {
+    seting_data["speedgoh"] = speedgoh.value;
+    seting_data["speedgos"] = speedgos.value;
+
+    localStorage.setItem(key_name, JSON.stringify(seting_data));
+    console.log(seting_data);
 });
