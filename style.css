@@ -126,6 +126,7 @@ main {
 }
 
 dialog{
+    color: #333;
     width: 80%;
     background: #d6e4f0;
     border: none;
@@ -142,6 +143,10 @@ dialog::backdrop{
     background: #f33;
 }
 
+#info_dia{
+    text-align: center;
+}
+
 @media screen and (min-width:768px) {
     dialog{
         width: 60%;
@@ -152,7 +157,7 @@ dialog::backdrop{
 .dark main {
     color: #999;
 }
-.dark body{
+.dark{
     background: #1a1a1a;
 }
 
@@ -166,4 +171,5 @@ dialog::backdrop{
 
 .dark dialog{
     background: #111;
+    color: #999;
 }

@@ -4,32 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?20240321">
-    <title>GPS</title>
+    <link rel="stylesheet" href="style.css?20240322">
+    <title>GPS-Meter-V2</title>
 </head>
 
 <body>
     <main>
         <header>
             <div class="main-memu">
-                <a href="https://github.com/ibui2628/GPS-Meter-V2" target="_blank" rel="noopener"><img
-                        src="./icons/info-circle.svg" alt="about"></a>
+                <button id="info_btn"><img src="./icons/info-circle.svg" alt="about"></button>
                 <button id="seting_btn"><img src="./icons/gear.svg" alt="setting"></button>
             </div>
             <button id="on_off_btn">OFF</button>
         </header>
 
+        <dialog id="info_dia">
+            <button id="infoclose" class="dialogclose"><img src="./icons/x.svg" alt=""></button>
+            <h1>GPS-Meter-V2</h1>
+            <p>about</p>
+            <a href="https://github.com/ibui2628/GPS-Meter-V2" target="_blank" rel="noopener">github</a>
+        </dialog>
+
         <dialog id="setting_dia">
             <button id="settingclose" class="dialogclose"><img src="./icons/x.svg" alt=""></button>
-            <p>設定</p>
-            <p>誤差修正</p>
+            <h2>設定</h2>
+            <h3>ダークモード</h3>
+            <label><input type="checkbox" id="dackmode_set"> ダークモードを有効にする</label>
+            <h3>誤差修正</h3>
             <label>速度 (km/h):<br><input type="number" id="speedgoh" value="0"></label><br>
             <label>速度 (m/s):<br><input type="number" id="speedgos" value="0"></label><br>
         </dialog>
 
         <dialog id="err_dia">
             <button id="errclose" class="dialogclose"><img src="./icons/x.svg" alt=""></button>
-            <p>エラーが発生したので情報の取得ができませんでした。</p>
+            <h2>エラーが発生したので情報の取得ができませんでした。</h2>
             <p>エラーコード: <span id="errcode"></span></p>
         </dialog>
 
@@ -40,7 +48,7 @@
             </div>
         </div>
         <div class="sub-info">
-            <p>サブ情報</p>
+            <h2>サブ情報</h2>
             <table>
                 <tr>
                     <th>高度(m)</th>
@@ -66,7 +74,7 @@
             <a href="" target="_blank" rel="noopener noreferrer" id="mapurl">google mapで場所を開く</a>
         </div>
     </main>
-    <script src="./script.js?20240321"></script>
+    <script src="./script.js?20240322"></script>
 
 </body>
 
