@@ -5,6 +5,7 @@
 ![説明用スクリーンショット](https://raw.githubusercontent.com/ibui2628/GPS-Meter-V2/main/help/img1.webp)
 
 各項目は以下のような意味です
+
 | 番号 | 名称 | 説明 |
 | :--: | :--: | :-: |
 | ① | 情報 | GPS-Meter-V2に関する情報やヘルプが見れます |
