@@ -2,7 +2,7 @@
 
 ## 各部説明
 
-![説明用スクリーンショット](https://raw.githubusercontent.com/ibui2628/GPS-Meter-V2/main/help/img1.webp)
+![説明用スクリーンショット](https://raw.githubusercontent.com/ibuibu268/GPS-Meter-V2/main/help/img1.webp)
 
 各項目は以下のような意味です
 
@@ -19,7 +19,7 @@
 
 ### ステップ1
 
-まず[GPS-Meter-V2](https://ibui2628.github.io/GPS-Meter-V2/)を開きます。
+まず[GPS-Meter-V2](https://ibuibu268.github.io/GPS-Meter-V2/)を開きます。
 
 ### ステップ2
 
@@ -33,7 +33,7 @@
 
 自動的に速度などの情報が表示されます。
 
-![リングが緑色になったら完了](https://raw.githubusercontent.com/ibui2628/GPS-Meter-V2/main/help/img2.webp)
+![リングが緑色になったら完了](https://raw.githubusercontent.com/ibuibu268/GPS-Meter-V2/main/help/img2.webp)
 
 ### ステップ4
 
@@ -43,7 +43,7 @@
 
 ステップ2でGPS-Meterが正しく情報が取得できなかった場合には以下のようにエラーが表示されます
 
-![エラー画面スクリーンショット](https://raw.githubusercontent.com/ibui2628/GPS-Meter-V2/main/help/img3.webp)
+![エラー画面スクリーンショット](https://raw.githubusercontent.com/ibuibu268/GPS-Meter-V2/main/help/img3.webp)
 
 また、エラーコードの意味は以下の通りです。
 
@@ -57,7 +57,7 @@
 
 設定ボタンを押すと設定画面が次のように表示されます。
 
-![設定画面スクリーンショット](https://raw.githubusercontent.com/ibui2628/GPS-Meter-V2/main/help/img4.webp)
+![設定画面スクリーンショット](https://raw.githubusercontent.com/ibuibu268/GPS-Meter-V2/main/help/img4.webp)
 
 ### 設定項目の説明
 
