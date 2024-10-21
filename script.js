@@ -15,7 +15,13 @@ function darkmode(e) {
 
 if (!localStorage.hasOwnProperty(key_name)) {
     console.info('create key');
-    seting_data = '{ "darkmode": false, "speedgoh": 0, "speedgos": 0}';
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        seting_data = '{ "darkmode": true, "speedgoh": 0, "speedgos": 0}';
+        darkmode(true);
+        dackmode_set.checked = true;
+    } else {
+        seting_data = '{ "darkmode": false, "speedgoh": 0, "speedgos": 0}';
+    }
     localStorage.setItem(key_name, seting_data);
     seting_data = JSON.parse(seting_data);
     info_dia.showModal();

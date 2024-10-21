@@ -35,8 +35,12 @@ main {
     margin-top: 70px;
 }
 
+a{
+    color: #122;
+}
+
 #memubtn{
-   margin: 0 20px;
+    margin: 0 20px;
 }
 
 .main-info {
@@ -157,6 +161,11 @@ dialog::backdrop{
 .dark main {
     color: #999;
 }
+
+.dark a{
+    color: #acc;
+}
+
 .dark{
     background: #1a1a1a;
 }
