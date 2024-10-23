@@ -103,10 +103,11 @@ a{
 }
 
 .dialogclose{
+    position: absolute;
+    right: 10px;
     background: none;
     border: none;
     padding: 0;
-    float: right;
 }
 
 .dialogclose img{
@@ -137,6 +138,7 @@ dialog{
     padding-top: 10px;
     border-radius: 8px;
     padding: 10px;
+    position: relative;
 }
 
 dialog::backdrop{
@@ -181,4 +183,8 @@ dialog::backdrop{
 .dark dialog{
     background: #111;
     color: #999;
+}
+
+#svglogo{
+    fill: #333;
 }

@@ -1,0 +1,17 @@
+<svg width="100" height="100" version="1.1" viewBox="0 0 26.458 26.458" xmlns="http://www.w3.org/2000/svg">
+ <style>
+  .fillc{fill: #555;stroke: #555;}
+ </style>
+ <path d="m26.178 13.454h-25.897a12.965 12.965 0 0 0 12.949 12.74 12.965 12.965 0 0 0 12.949-12.74z" stroke="#000" stroke-linejoin="round" stroke-miterlimit="15.7" stroke-width=".52898" class="fillc"/>
+ <path d="m13.229 0.26459a12.965 12.965 0 0 0-12.965 12.965 12.965 12.965 0 0 0 0.01602 0.22479h25.897a12.965 12.965 0 0 0 0.01602-0.22479 12.965 12.965 0 0 0-12.965-12.965z" stroke-linejoin="round" stroke-miterlimit="15.7" stroke-width=".52898" style="fill: #fff;" class="fillc"/>
+ <g class="fillc" stroke-width="0">
+  <path d="m11.873 13.515a1.69 1.1278 45.926 0 0 1.9907 0.45561 1.69 1.1278 45.926 0 0-0.33955-1.9932l-6.7028-5.3052z"/>
+  <g stroke-miterlimit="10">
+   <rect transform="matrix(.49944 -.86635 .8657 .50056 0 0)" x="-5.09" y="6.14" width="0.5" height="2.6"/>
+   <rect transform="matrix(.86635 -.49944 .50056 .8657 0 0)" x="4.57" y="6.14" width="0.5" height="2.6"/>
+   <rect x="12.96" y="1.32" width="0.5" height="2.6"/>
+   <rect transform="matrix(.86635 .49944 -.50056 .8657 0 0)" x="17.77" y="-7.074" width="0.5" height="2.6"/>
+   <rect transform="matrix(.49944 .86635 -.8657 .50056 0 0)" x="17.77" y="-16.76" width="0.5" height="2.6"/>
+  </g>
+ </g>
+</svg>
